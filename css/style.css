@@ -1,0 +1,93 @@
+/* css/style.css */
+body {
+  font-family: "Arial", sans-serif;
+  background-color: white;
+  color: black;
+  text-align: center;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.dark-mode {
+  background-color: #121212;
+  color: white;
+}
+
+.cursor {
+  display: inline-block;
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+/* 기술 스택 스타일 추가 */
+.bar {
+  width: 100%;
+  background-color: #eee;
+  border-radius: 20px;
+  overflow: hidden;
+  height: 30px;
+  margin-top: 5px;
+}
+
+.progress {
+  height: 100%;
+  background-color: #4caf50;
+  color: white;
+  text-align: right;
+  padding-right: 10px;
+  line-height: 30px;
+  font-weight: bold;
+  width: 0; /* 처음엔 0으로 숨겨져 있음 */
+  transition: width 1.5s ease;
+}
+
+/* 프로젝트 스타일 추가*/
+.portfolio-category {
+  margin: 40px auto;
+  width: 90%;
+  max-width: 1000px;
+}
+
+.portfolio-category h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.project-item {
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  padding: 10px;
+  background-color: #fff;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.project-item img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.project-item p {
+  margin: 10px 0;
+}
+
+.project-item a {
+  display: inline-block;
+  margin-top: 5px;
+  text-decoration: none;
+  color: #007bff;
+}
